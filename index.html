@@ -41,6 +41,55 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
+        <button class="burger-btn js-open-menu">
+            <svg class="burger-btn__icon">
+                <use href="./images/sprite.svg#icon-menu_40px"></use>
+            </svg>
+        </button>
+        <div class="mobile-menu js-menu-container">
+            <button class="mobile-menu__btn js-close-menu">
+                <svg class="mobile-menu__icon">
+                    <use href="./images/sprite.svg#icon-Vector"></use>
+                </svg>
+            </button>
+            <div class="wrapper-mobile-first">
+            <ul class="list mobile-menu__list">
+                <li>
+                    <a href="" class="link mobile-menu__link">Студия</a>
+                </li>
+                <li>
+                    <a href="./portfolio.html" class="link mobile-menu__link">Портфолио</a>
+                </li>
+                <li>
+                    <a href=""class="link mobile-menu__link">Контакты</a>
+                </li>
+            </ul>
+            </div>
+            <div class="wrapper-mobile-second">
+            <ul class="list">
+                <li>
+                    <a href="tel:+380961111111" class="link mobile-menu__contacts">+38 096 111 11 11</a>
+                </li>
+                <li>
+                    <a href="mailto:info@devstudio.com" class="link mobile-menu__contacts">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="list mobile-menu__socials-list">
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials">Instagram</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials">Twitter</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials">Facebook</a>
+                </li>
+                <li class="mobile-menu__socials-item">
+                    <a href="" class="link mobile-menu__socials">LinkedIn</a>
+                </li>
+            </ul>
+            </div>
+        </div>
         </div>
     </header>
     <main>
@@ -120,7 +169,18 @@
             <h2 class="title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__item">
-                    <img src="./images/man1.jpg" alt="Игорь" width="270" height="260">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px )" 
+                        srcset="./images/man1.jpg 1x,./images/team1-2x.jpg 2x">
+                        <source 
+                        media="(min-width: 768px )" 
+                        srcset="./images/team1-tab.jpg 1x,./images/team1-tab2x.jpg 2x"> 
+                        <source 
+                        media="(min-width: 480px)" 
+                        srcset="./images/team1-mob.jpg 1x,./images/team1-mob2x.jpg 2x">       
+                        <img src="./images/man1.jpg" alt="Игорь" width="270" height="260">
+                    </picture>
                     <div class="team-list__bottom">
                     <h3 class="team-list__title">Игорь Демьяненко</h3>
                     <p class="team-list__text" lang="en">Product Designer</p>
@@ -158,7 +218,18 @@
                     
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/man2.jpg" alt="Ольа" width="270" height="260">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px )" 
+                        srcset="./images/man2.jpg 1x,./images/team2-2x.jpg 2x">
+                        <source 
+                        media="(min-width: 768px )" 
+                        srcset="./images/team2-tab.jpg 1x,./images/team2-tab2x.jpg 2x">
+                        <source 
+                        media="(min-width: 480px)" 
+                        srcset="./images/team2-mob.jpg 1x,./images/team2-mob2x.jpg 2x">        
+                        <img src="./images/man2.jpg" alt="Ольга" width="270" height="260">
+                    </picture>
                     <div class="team-list__bottom">
                     <h3 class="team-list__title">Ольга Репина</h3>
                     <p class="team-list__text" lang="en">Frontend Developer</p>
@@ -196,7 +267,18 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/man3.jpg" alt="Николай" width="270" height="260">
+                    <picture>
+                        <source 
+                        media="(min-width: 1200px )"
+                        srcset="./images/man3.jpg 1x,./images/team3-2x.jpg 2x">
+                        <source 
+                        media="(min-width: 768px )" 
+                        srcset="./images/team3-tab.jpg 1x,./images/team3-tab2x.jpg 2x">
+                        <source 
+                        media="(min-width: 480px)" 
+                        srcset="./images/team3-mob.jpg 1x,./images/team3-mob2x.jpg 2x">
+                        <img src="./images/man3.jpg" alt="Николай" width="270" height="260">
+                    </picture>
                     <div class="team-list__bottom">
                     <h3 class="team-list__title">Николай Тарасов</h3>
                     <p class="team-list__text" lang="en">Marketing</p>
@@ -234,7 +316,12 @@
                     </div>
                 </li>
                 <li class="team-list__item">
-                    <img src="./images/man4.jpg" alt="Михаил" width="270" height="260">
+                    <picture>
+                        <source media="(min-width: 1200px )" srcset="./images/man4.jpg 1x,./images/team4-2x.jpg 2x">
+                        <source media="(min-width: 768px )" srcset="./images/team4-tab.jpg 1x,./images/team4-tab2x.jpg 2x">
+                        <source media="(min-width: 480px)" srcset="./images/team4-mob.jpg 1x,./images/team4-mob2x.jpg 2x">
+                        <img src="./images/man4.jpg" alt="Михаил" width="270" height="260">
+                    </picture>
                     <div class="team-list__bottom">
                     <h3 class="team-list__title">Михаил Ермаков</h3>
                     <p class="team-list__text" lang="en">UI Designer</p>
@@ -439,6 +526,7 @@
             </form>
         </div>
     </div>
-<script src="./js/modal.js"></script>  
+<script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>  
 </body>
 </html>
