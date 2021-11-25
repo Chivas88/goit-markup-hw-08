@@ -216,6 +216,9 @@
   color: var(--accent-color);
   display: block;
   padding-right: 10px;
+  @media screen and (max-width:479px) {
+    font-size: 4vw;
+  }
 }
 .mobile-menu__socials-item {
   &:not(:last-child) {
