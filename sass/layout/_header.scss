@@ -211,6 +211,9 @@
   font-size: 34px;
   line-height: 1.18;
   color: var(--accent-color);
+  @media screen and (max-width:479px) {
+    font-size: 4vw;
+  }
 }
 .mobile-menu__socials-list {
   display: flex;
